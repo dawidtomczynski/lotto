@@ -3,27 +3,23 @@ from random import randint
 
 my_list = []
 for i in range(3):
+    num = int(input("Podaj liczbę: "))
     while True:
-        num = int(input("Podaj liczbę: "))
         if num > 9:
             print("Podałeś za dużą liczbę.")
         elif num < 1:
             print("Podałeś za małą liczbę.")
         else:
             my_list.append(num)
-            break
-
-
-# my_list = []
-# for i in range(3):
-#     a = my_list.append(int(input("Podaj liczbę: ")))
+        break
 
 my_list.sort()
 print(my_list)
 
 comp_list = []
 for item in range(3):
-    comp_list.append(randint(1, 9))
+    num_comp = comp_list.append(randint(1, 9))
+
 comp_list.sort()
 print(comp_list)
 
